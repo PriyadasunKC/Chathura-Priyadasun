@@ -23,12 +23,12 @@ const Photo = () => {
           animate={{
             opacity: 1,
             transition: {
-              delay: 2,
+              delay: 2.4,
               duration: 0.4,
               ease: "easeInOut",
             },
           }}
-          className="w-[250px] h-[250px] xl:w-[460px] xl:h-[460px] mix-blend-lighten"
+          className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute"
         >
           <Image
             src="/assets/photo.png"
@@ -36,20 +36,21 @@ const Photo = () => {
             quality={100}
             fill
             alt="My Image"
-            className="object-contain rounded-full"
+            className="object-contain"
           />
         </motion.div>
 
         {/*Circle*/}
         <motion.svg
-          className="w-[252px] xl:w-[462px] h-[252px]  xl:h-[462px]"
+          className="w-[300px] xl:w-[506px] h-[300px]  xl:h-[506px]"
           fill="transparent"
-          viewBox="0 0 462 462"
+          viewBox="0 0 506 506"
           xmlns="http://www.w3.org/2000/svg"
         >
           <motion.circle
-            cx="252"
-            cy="252"
+            cx="253"
+            cy="253"
+            r="260"
             stroke="#00ff99"
             strokeWidth="4"
             StrokeLinecap="round"
@@ -60,7 +61,7 @@ const Photo = () => {
               rotate: [120, 360],
             }}
             transition={{
-              duration: 4,
+              duration: 20,
               repeat: Infinity,
               repeatType: "reverse",
             }}

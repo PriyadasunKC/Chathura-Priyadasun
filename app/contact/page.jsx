@@ -206,11 +206,11 @@ const Contact = () => {
                 <SelectContent>
                   <SelectGroup>
                     <SelectLabel>Select Services</SelectLabel>
-                    <SelectItem value="wb">Web Development</SelectItem>
-                    <SelectItem value="se">
+                    <SelectItem value="for Web Development">Web Development</SelectItem>
+                    <SelectItem value="Hire for Software Engineering Intern">
                       Hire for an Software Engineering Internship
                     </SelectItem>
-                    <SelectItem value="dev">
+                    <SelectItem value="Hire for DevOps Engineering Intern">
                       Hire for an DevOps Engineering Internship
                     </SelectItem>
                   </SelectGroup>

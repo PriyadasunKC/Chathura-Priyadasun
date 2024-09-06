@@ -8,29 +8,15 @@ const services = [
     num: "01",
     title: "Web Development",
     description:
-      "We build websites that are optimized for performance and SEO.",
-    href: "/",
+      "We design and develop fast, responsive, and websites that deliver excellent user experiences, to meet business goals and ensure high performance across all devices.",
+    href: "/contact",
   },
   {
     num: "02",
     title: "Dev Ops",
     description:
-      "We build websites that are optimized for performance and SEO.",
-    href: "/",
-  },
-  {
-    num: "03",
-    title: "Web Development",
-    description:
-      "We build websites that are optimized for performance and SEO.",
-    href: "/",
-  },
-  {
-    num: "04",
-    title: "Web Development",
-    description:
-      "We build websites that are optimized for performance and SEO.",
-    href: "/",
+      "We automate workflows, ensuring seamless integration between development and operations for faster, reliable software delivery.",
+    href: "/contact",
   },
 ];
 

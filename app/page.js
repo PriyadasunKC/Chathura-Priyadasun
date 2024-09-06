@@ -12,14 +12,14 @@ const Home = () => {
 
   const handleSeCVdownload = () => {
     window.open(
-      "https://drive.google.com/uc?export=download&id=1F-xKP8ZV3ArXVv8_WY8pKRgHryhzJdLr",
+      "https://drive.google.com/uc?export=download&id=1Y3X9MYZ-63XKzs-xjjq66n5uMZ9negq9",
       "_self"
     );
   };
 
   const handleDevOpsCVdownload = () => {
     window.open(
-      "https://drive.google.com/uc?export=download&id=1wd3Y2fLM280opEK8HaEcFfklqwDfirEI",
+      "https://drive.google.com/uc?export=download&id=1VuVKFHS05UYJ1CfFdvkfeXbYkUPXAEWy",
       "_self"
     );
   }

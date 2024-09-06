@@ -49,7 +49,7 @@ const Services = () => {
                   <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">
                     {service.num}
                   </div>
-                  <Link href={service.href} className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45 ">
+                  <Link href={service.href} className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:rotate-45">
                     <BsArrowDownRight className="text-primary text-3xl "/>
                   </Link>
                 </div>
@@ -61,7 +61,7 @@ const Services = () => {
                 <p className="text-white/60">{service.description}</p>
 
                 {/* Border */}
-                <div className="border-b border-white/20 w-full "></div>
+                <div className="border-b border-white/20 w-full"></div>
               </div>
             );
           })}

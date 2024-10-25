@@ -19,9 +19,10 @@ const Home = () => {
 
   const handleDevOpsCVdownload = () => {
     window.open(
-      "https://drive.google.com/uc?export=download&id=1VuVKFHS05UYJ1CfFdvkfeXbYkUPXAEWy",
-      "_self"
-    );
+  "https://drive.google.com/uc?export=download&id=1VLB7E_S3kGU_bZ0xrAjGCTRktyxcStRx",
+  "_self"
+);
+
   }
 
   return (

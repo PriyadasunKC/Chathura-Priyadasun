@@ -12,8 +12,8 @@ const Home = () => {
 
   const handleSeCVdownload = () => {
     window.open(
-      "https://drive.google.com/uc?export=download&id=1hBq0J0en0-XZdg2gPlYkDO79uWcrEi6o",
-      "_self"
+      "https://drive.google.com/uc?export=download&id=1DhA8qZ2i4bli5pE4VHfBEOumAVbZLIRf",
+      "_self",
     );
   };
 

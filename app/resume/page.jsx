@@ -20,6 +20,7 @@ import {
   FaBootstrap,
   FaWindows,
   FaLinux,
+  FaMobileAlt,
 } from "react-icons/fa";
 
 import { DiMsqlServer } from "react-icons/di";
@@ -42,10 +43,48 @@ import {
   SiAnsible,
   SiNamecheap,
   SiSonarqube,
+  SiRedux,
+  SiPostgresql,
+  SiGitlab,
+  SiPrometheus,
+  SiGrafana,
+  SiNginx,
+  SiKubernetes,
+  SiTypescript,
 } from "react-icons/si";
 
 import { GiCubes } from "react-icons/gi";
 import { ScrollArea } from "@/components/ui/scroll-area";
+
+// Experience data
+const experience = {
+  title: "My experience",
+  description:
+    "Hands-on industry experience through internships and part-time roles, developing web and mobile applications, implementing CI/CD pipelines, and working in agile cross-functional teams.",
+  items: [
+    {
+      company: "Vectorium Labs (Remote)",
+      position: "Full Stack Developer Intern",
+      duration: "Nov 2025 – Present",
+      description:
+        "Developing a Hospital Management System using Node.js, Next.js, React, PostgreSQL, AWS S3, AWS SES, and WebSockets for real-time features.",
+    },
+    {
+      company: "Advantage Group Australasia",
+      position: "Software Engineer Intern",
+      duration: "6 Months (2025)",
+      description:
+        "Frontend Developer on Homzly Real Estate Platform. Built Admin and Super Admin platforms, account management, property dashboards, and user-facing components using Next.js, Redux Toolkit, Axios, and Tailwind CSS.",
+    },
+    {
+      company: "Advantage Group Australasia",
+      position: "Part-time Software Engineer – Food Delivery Platform",
+      duration: "2025 – Present",
+      description:
+        "Developing User, Merchant, and Driver mobile apps using React Native CLI with Redux Toolkit and Axios. Building admin web interface to manage drivers, customers, and restaurants.",
+    },
+  ],
+};
 
 // about data
 const about = {
@@ -142,6 +181,11 @@ const education = {
       degree: "Introduction to Web Development ",
       date: "2023",
     },
+    {
+      institute: "NSBM Green University",
+      degree: "Finalist – Duothan 4.0 Hackathon",
+      date: "2024",
+    },
   ],
 };
 
@@ -158,6 +202,14 @@ const ProgrammingSkills = {
     {
       icon: SiC,
       name: "C",
+    },
+    {
+      icon: FaJs,
+      name: "JavaScript",
+    },
+    {
+      icon: SiTypescript,
+      name: "TypeScript",
     },
     {
       icon: GiCubes,
@@ -220,6 +272,22 @@ const webSkills = {
       icon: SiTailwindcss,
       name: "Tailwind CSS",
     },
+    {
+      icon: SiNextdotjs,
+      name: "Next.js",
+    },
+    {
+      icon: SiRedux,
+      name: "Redux Toolkit",
+    },
+    {
+      icon: SiPostgresql,
+      name: "PostgreSQL",
+    },
+    {
+      icon: FaMobileAlt,
+      name: "React Native CLI",
+    },
   ],
 };
 
@@ -269,6 +337,26 @@ const DevOpsSkills = {
       icon: SiSonarqube,
       name: "Sonarqube",
     },
+    {
+      icon: SiGitlab,
+      name: "GitLab",
+    },
+    {
+      icon: SiPrometheus,
+      name: "Prometheus",
+    },
+    {
+      icon: SiGrafana,
+      name: "Grafana",
+    },
+    {
+      icon: SiNginx,
+      name: "NGINX",
+    },
+    {
+      icon: SiKubernetes,
+      name: "Kubernetes",
+    },
   ],
 };
 
@@ -306,10 +394,11 @@ const Resume = () => {
     >
       <div className="container mx-auto">
         <Tabs
-          defaultValue="education"
+          defaultValue="experience"
           className="flex flex-col xl:flex-row gap-[60px]"
         >
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0">
+            <TabsTrigger value="experience">Experience</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="ProgrammingSkills">
               Programming Language Skills
@@ -325,6 +414,33 @@ const Resume = () => {
           {/* Content */}
           <div className="min-h-[70vh] w-full">
             {/* Experience */}
+            <TabsContent value="experience" className="w-full">
+              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                <h3 className="text-4xl font-bold">{experience.title}</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  {experience.description}
+                </p>
+                <ScrollArea className="h-[450px]">
+                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                    {experience.items.map((item, index) => (
+                      <li
+                        key={index}
+                        className="bg-[#232329] p-6 rounded-xl flex flex-col justify-start items-center lg:items-start gap-2"
+                      >
+                        <span className="text-accent">{item.duration}</span>
+                        <h3 className="text-xl max-w-full text-center lg:text-left">
+                          {item.position}
+                        </h3>
+                        <p className="text-white/60">{item.company}</p>
+                        <p className="text-white/60 text-sm mt-2">
+                          {item.description}
+                        </p>
+                      </li>
+                    ))}
+                  </ul>
+                </ScrollArea>
+              </div>
+            </TabsContent>
 
             {/* Education */}
             <TabsContent value="education" className="w-full">
